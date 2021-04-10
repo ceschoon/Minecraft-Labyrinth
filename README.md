@@ -2,7 +2,7 @@
 
 ## World demo
 
-Download and unzip the folder **Labyrinth-demo.zip**. Place it your .minecraft/saves/ folder. You will spawn near a wooden platform with commands blocks from which you can press buttons to select and generate mazes.
+Download and place the folder **Labyrinth-demo** in your .minecraft/saves/. You will spawn near a wooden platform with commands blocks from which you can press buttons to select and generate mazes.
 
 ## Customize your maze
 
