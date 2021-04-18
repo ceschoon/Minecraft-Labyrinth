@@ -12,9 +12,13 @@ A set of unit structures is left in the demo world for the player to use. You ca
 This set of structures can be selected to generate the maze by setting the 
 "laby_palette" scoreboard to -1. You can easily change the value of this scoreboard by pressing the "change palette" button on the wooden platform at spawn.
 
-## Code repository
+## Source code
 
-The functions used to generate these mazes belong to a datapack which is maintained in my datapack repository:
+The functions used to generate these mazes belong to a datapack which is located at
+
+> Labyrinth-demo/datapacks/Cedric_Labyrinth
+
+The code development prior to the creation of this demo world is in the history of the repository
 
 > https://github.com/ceschoon/Minecraft-Datapacks
 
