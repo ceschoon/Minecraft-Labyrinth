@@ -33,3 +33,4 @@ All of this is encapsulated in the laby:generate minecraft function (placement o
 ![alt text](gallery/screenshot1.png?raw=true)
 ![alt text](gallery/screenshot2.png?raw=true)
 ![alt text](gallery/screenshot3.png?raw=true)
+![alt text](gallery/screenshot21.png?raw=true)
