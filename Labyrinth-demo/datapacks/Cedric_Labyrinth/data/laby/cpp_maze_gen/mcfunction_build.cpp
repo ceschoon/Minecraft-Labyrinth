@@ -12,7 +12,7 @@ int main(int argc, char** argv)
 {
 	// Read options and declare files
 	
-	if (argc<1) throw runtime_error("You must give one argument (the palette number)");
+	if (argc<2) throw runtime_error("You must give one argument (the palette number)");
 	
 	string palette_id = argv[1];
 	ofstream fct_file("build"+palette_id+".mcfunction");
