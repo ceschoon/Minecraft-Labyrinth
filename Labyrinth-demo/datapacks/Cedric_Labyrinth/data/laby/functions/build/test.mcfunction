@@ -66,7 +66,7 @@ execute at @e[type=armor_stand,name=unit33] run setblock ~ ~ ~ structure_block[m
 execute at @e[type=armor_stand,name=unit23] run setblock ~ ~ ~ structure_block[mode=load]{mode:"LOAD",posX:0,posY:0,posZ:0,name:"minecraft:unit20"}
 execute at @e[type=armor_stand,name=unit13] run setblock ~ ~ ~ structure_block[mode=load]{mode:"LOAD",posX:0,posY:0,posZ:0,name:"minecraft:unit10"}
 execute at @e[type=armor_stand,name=unit3] run setblock ~ ~ ~ structure_block[mode=load]{mode:"LOAD",posX:0,posY:0,posZ:0,name:"minecraft:unit3"}
-execute at @e[type=armor_stand,name=unit500] run setblock ~ ~ ~ structure_block[mode=load]{mode:"LOAD",posX:0,posY:0,posZ:0,name:"minecraft:unit4"}
+execute at @e[type=armor_stand,name=unit504] run setblock ~ ~ ~ structure_block[mode=load]{mode:"LOAD",posX:0,posY:0,posZ:0,name:"minecraft:unit4"}
 execute at @e[type=armor_stand,name=unit404] run setblock ~ ~ ~ structure_block[mode=load]{mode:"LOAD",posX:0,posY:0,posZ:0,name:"minecraft:unit400"}
 execute at @e[type=armor_stand,name=unit334] run setblock ~ ~ ~ structure_block[mode=load]{mode:"LOAD",posX:0,posY:0,posZ:0,name:"minecraft:unit330"}
 execute at @e[type=armor_stand,name=unit324] run setblock ~ ~ ~ structure_block[mode=load]{mode:"LOAD",posX:0,posY:0,posZ:0,name:"minecraft:unit320"}

@@ -74,13 +74,20 @@ int main(int argc, char** argv)
 	for (string unit : units)
 	{
 		// check that there is a structure for this unit
-		// otherwise try to use the corresponding external wall unit
+		// otherwise try to use the default unit500
+		// otherwise try the corresponding external wall unit
 		
 		ifstream struct_file(struct_dir+"unit"+unit+".nbt");
+		ifstream struct_file2(struct_dir+"unit500.nbt");
 		
 		if (struct_file.good())
 		{
 			string cmd = cmd1 + unit + cmd2 + unit + cmd3;
+			fct_file << cmd << endl;
+		}
+		else if (struct_file2.good())
+		{
+			string cmd = cmd1 + unit + cmd2 + "500" + cmd3;
 			fct_file << cmd << endl;
 		}
 		else
@@ -89,8 +96,8 @@ int main(int argc, char** argv)
 			string internal_wall_unit = unit.substr(len-1,len);
 			string default_unit = "0";
 			
-			ifstream struct_file2(struct_dir+"unit"+internal_wall_unit+".nbt");
-			if (struct_file2.good())
+			ifstream struct_file3(struct_dir+"unit"+internal_wall_unit+".nbt");
+			if (struct_file3.good())
 			{
 				string cmd = cmd1 + unit + cmd2 + internal_wall_unit + cmd3;
 				fct_file << cmd << endl;
