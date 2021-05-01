@@ -71,8 +71,21 @@ void dimensions(string maze_in, int &nx, int &ny)
 
 void identify_topology(int array_in[], int array_out[], int nx, int ny)
 {
-	for (int i=0; i<nx; i++)
-	for (int j=0; j<ny; j++)
+	// mark external walls as "0"
+	for (int i=0; i<nx; i++) 
+	{
+		array_out[i+nx*0] = 0;
+		array_out[i+nx*(ny-1)] = 0;
+	}
+	for (int j=0; j<ny; j++) 
+	{
+		array_out[0+nx*j] = 0;
+		array_out[(nx-1)+nx*j] = 0;
+	}
+	
+	// identify topology of central units
+	for (int i=1; i<nx-1; i++)
+	for (int j=1; j<ny-1; j++)
 	{
 		int c = array_in[i+nx*j];     // center
 		int t = array_in[i+nx*(j-1)]; // top
@@ -101,6 +114,8 @@ void identify_topology(int array_in[], int array_out[], int nx, int ny)
 		if (c==0 && t==1 && b==0 && l==0 && r==0) topo = 330; // T-intersection
 		
 		if (c==0 && t==0 && b==0 && l==0 && r==0) topo = 400; // fully open
+		
+		if (c==1) topo = 500; // wall (inside of the maze)
 		
 		array_out[i+nx*j] = topo;
 	}

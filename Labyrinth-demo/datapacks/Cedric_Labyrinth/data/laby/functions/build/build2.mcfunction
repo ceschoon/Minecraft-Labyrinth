@@ -158,3 +158,13 @@ execute at @e[type=armor_stand,name=unit39] run setblock ~ ~ ~ structure_block[m
 execute at @e[type=armor_stand,name=unit29] run setblock ~ ~ ~ structure_block[mode=load]{mode:"LOAD",ignoreEntities:0b,posX:0,posY:0,posZ:0,name:"laby:palette2/unit20"}
 execute at @e[type=armor_stand,name=unit19] run setblock ~ ~ ~ structure_block[mode=load]{mode:"LOAD",ignoreEntities:0b,posX:0,posY:0,posZ:0,name:"laby:palette2/unit10"}
 execute at @e[type=armor_stand,name=unit9] run setblock ~ ~ ~ structure_block[mode=load]{mode:"LOAD",ignoreEntities:0b,posX:0,posY:0,posZ:0,name:"laby:palette2/unit0"}
+execute at @e[type=armor_stand,name=unit500] run setblock ~ ~ ~ structure_block[mode=load]{mode:"LOAD",ignoreEntities:0b,posX:0,posY:0,posZ:0,name:"laby:palette2/unit0"}
+execute at @e[type=armor_stand,name=unit501] run setblock ~ ~ ~ structure_block[mode=load]{mode:"LOAD",ignoreEntities:0b,posX:0,posY:0,posZ:0,name:"laby:palette2/unit0"}
+execute at @e[type=armor_stand,name=unit502] run setblock ~ ~ ~ structure_block[mode=load]{mode:"LOAD",ignoreEntities:0b,posX:0,posY:0,posZ:0,name:"laby:palette2/unit0"}
+execute at @e[type=armor_stand,name=unit503] run setblock ~ ~ ~ structure_block[mode=load]{mode:"LOAD",ignoreEntities:0b,posX:0,posY:0,posZ:0,name:"laby:palette2/unit0"}
+execute at @e[type=armor_stand,name=unit504] run setblock ~ ~ ~ structure_block[mode=load]{mode:"LOAD",ignoreEntities:0b,posX:0,posY:0,posZ:0,name:"laby:palette2/unit0"}
+execute at @e[type=armor_stand,name=unit505] run setblock ~ ~ ~ structure_block[mode=load]{mode:"LOAD",ignoreEntities:0b,posX:0,posY:0,posZ:0,name:"laby:palette2/unit0"}
+execute at @e[type=armor_stand,name=unit506] run setblock ~ ~ ~ structure_block[mode=load]{mode:"LOAD",ignoreEntities:0b,posX:0,posY:0,posZ:0,name:"laby:palette2/unit0"}
+execute at @e[type=armor_stand,name=unit507] run setblock ~ ~ ~ structure_block[mode=load]{mode:"LOAD",ignoreEntities:0b,posX:0,posY:0,posZ:0,name:"laby:palette2/unit0"}
+execute at @e[type=armor_stand,name=unit508] run setblock ~ ~ ~ structure_block[mode=load]{mode:"LOAD",ignoreEntities:0b,posX:0,posY:0,posZ:0,name:"laby:palette2/unit0"}
+execute at @e[type=armor_stand,name=unit509] run setblock ~ ~ ~ structure_block[mode=load]{mode:"LOAD",ignoreEntities:0b,posX:0,posY:0,posZ:0,name:"laby:palette2/unit0"}

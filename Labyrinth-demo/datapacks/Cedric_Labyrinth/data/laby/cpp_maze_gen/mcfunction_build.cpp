@@ -18,7 +18,7 @@ int main(int argc, char** argv)
 	ofstream fct_file("build"+palette_id+".mcfunction");
 	string struct_dir = "../structures/palette"+palette_id+"/";
 	
-	// List of possible units (base + offset)
+	// List of possible units (base + offset) (consider unit 500 separately)
 	
 	vector<string> units_base = {"400", "330", "320", "310", "300", "230", "220", "210", "200", "110", "100", "40", "30", "20", "10", "0"};
 	vector<string> units;
@@ -60,8 +60,64 @@ int main(int argc, char** argv)
 		}
 	}
 	
+	// The case of internal walls (unit 500)
+	// Replace this unit with external walls (unit 0) if no structure
+	// has been saved for unit500 (for backward compatibility)
+	
+	units.clear();
+	for (int i=0; i<10; i++)
+	{
+		string unit = "50" + to_string(i);
+		units.push_back(unit);
+	}
+	
+	for (string unit : units)
+	{
+		// check that there is a structure for this unit
+		// otherwise try to use the corresponding external wall unit
+		
+		ifstream struct_file(struct_dir+"unit"+unit+".nbt");
+		
+		if (struct_file.good())
+		{
+			string cmd = cmd1 + unit + cmd2 + unit + cmd3;
+			fct_file << cmd << endl;
+		}
+		else
+		{
+			int len = unit.size();
+			string internal_wall_unit = unit.substr(len-1,len);
+			string default_unit = "0";
+			
+			ifstream struct_file2(struct_dir+"unit"+internal_wall_unit+".nbt");
+			if (struct_file.good())
+			{
+				string cmd = cmd1 + unit + cmd2 + internal_wall_unit + cmd3;
+				fct_file << cmd << endl;
+			}
+			else
+			{
+				string cmd = cmd1 + unit + cmd2 + default_unit + cmd3;
+				fct_file << cmd << endl;
+			}
+		}
+	}
+	
 	/* uncomment to generate the code that is now moved
 	 * in functions "activatestruct" and 'killarmorstands"
+	
+	// List all units (base + offset)
+	
+	units_base = {"500", "400", "330", "320", "310", "300", "230", "220", "210", "200", "110", "100", "40", "30", "20", "10", "0"};
+	units.clear();
+	
+	for (int i=0; i<10; i++)
+	for (string unit_base : units_base)
+	{
+		int len = unit_base.size();
+		string unit = unit_base.substr(0,len-1) + to_string(i);
+		units.push_back(unit);
+	}
 	
 	// Second the restone block to activate
 	
