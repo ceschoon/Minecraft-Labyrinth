@@ -90,7 +90,7 @@ int main(int argc, char** argv)
 			string default_unit = "0";
 			
 			ifstream struct_file2(struct_dir+"unit"+internal_wall_unit+".nbt");
-			if (struct_file.good())
+			if (struct_file2.good())
 			{
 				string cmd = cmd1 + unit + cmd2 + internal_wall_unit + cmd3;
 				fct_file << cmd << endl;
