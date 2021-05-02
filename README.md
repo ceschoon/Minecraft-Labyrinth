@@ -32,11 +32,20 @@ The first step is to place structure blocks at the positions of the armor stands
 
 All of this is encapsulated in the laby:generate minecraft function (placement of the armor stands and building process). The maze to generate can be selected by changing the value of the "laby\_maze" scoreboard. The same way you can select the set of unit structures to be used by changing the scoreboard "laby\_palette".
 
+## Themes currently available
+
+| palette 1 | Overworld ruins |
+| palette 2 | Nether ruins |
+| palette 3 | Mega taiga |
+| palette 4 | Desert city |
+| palette 5 | Mineshaft |
+| palette 6 | In the dark |
+
 ## Gallery
 
 ![alt text](gallery/screenshot11.png?raw=true)
-![alt text](gallery/screenshot12.png?raw=true)
-![alt text](gallery/screenshot13.png?raw=true)
 ![alt text](gallery/screenshot21.png?raw=true)
 ![alt text](gallery/screenshot33.png?raw=true)
 ![alt text](gallery/screenshot43.png?raw=true)
+![alt text](gallery/screenshot52.png?raw=true)
+![alt text](gallery/screenshot62.png?raw=true)
